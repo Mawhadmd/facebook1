@@ -2,7 +2,7 @@ nav{
     width: 24vw;
     min-width: 280px;
     max-width: 360px;
-position: sticky;
+position: fixed;
 top: 65px;
 left: 0;
 bottom: 0;
@@ -21,6 +21,19 @@ scrollbar-color: rgba(177, 173, 173, 0.603) rgba(48, 47, 46, 0.23);
   transition: scrollbar-width 500ms;
 }
 
+.nav-replace {
+    width: 24vw;
+    min-width: 280px;
+    max-width: 360px;
+position: sticky;
+top: 65px;
+left: 0;
+bottom: 0;
+padding-left: 10px;
+padding-bottom: 10px;
+pointer-events: none;
+z-index: -1231231312312;
+}
 
 
 .nav-bar-items, .pfp-bottom{
@@ -48,7 +61,7 @@ nav .pfp {
 
 
 nav:hover{
-    overflow: hidden;
+
     overflow-y: scroll;
     scrollbar-width: thin;
 }
