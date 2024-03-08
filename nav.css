@@ -1,0 +1,188 @@
+nav{
+    width: 24vw;
+    min-width: 280px;
+    max-width: 360px;
+position: sticky;
+top: 65px;
+left: 0;
+bottom: 0;
+padding-left: 10px;
+display: flex;
+flex-direction: column;
+overflow: auto;
+color: var(--black-text);
+font-size: 14px;
+padding-bottom: 10px;
+
+scrollbar-color: rgba(177, 173, 173, 0.603) rgba(48, 47, 46, 0.23);
+  scrollbar-width:none;
+  scroll-behavior: smooth;
+  scrollbar-arrow-color: rgba(255, 235, 205, 0);
+  transition: scrollbar-width 500ms;
+}
+
+
+
+.nav-bar-items, .pfp-bottom{
+    padding: 5px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border-radius: 15px;
+    width:auto;
+    
+}
+
+.nav-bar-items span{
+  font-weight: 600;
+}
+
+nav .pfp {
+    border-radius: 20px;
+}
+
+
+
+
+
+nav:hover{
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+
+
+nav img{
+    width: 28px;
+    margin-right: 10px;
+}
+
+.nav-scroll2{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    
+}
+
+#Smore, #Smore1  {
+  gap: 13px;
+    display: flex;
+    padding-left:5px;
+    
+}
+
+#Smore.close{
+    display: none;
+}
+
+.nav-scroll2
+{
+    display: none;
+}
+
+
+
+#Smore.open {
+    display: flex;
+}
+
+
+#Smore .icon, #Smore1 .icon {
+background-color: rgba(205, 205, 205, 0.371);
+border-radius: 15px;
+padding: 1px 10px;
+font-size: large;
+}
+
+
+.shortcuts-div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.shortcuts-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+   
+}
+
+.YourShort{
+    padding-top: 8px;
+    color: var(--gray-text);
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.pfp-bottom img{
+    border-radius: 6px;
+    width: 25px;
+}
+
+.Edit{
+    visibility: hidden;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 7px;
+    color: var(--facebook-blue);
+}
+
+.shortcuts-div:hover .Edit{
+    visibility: visible;
+}
+
+.nav-footer{
+    cursor: pointer;
+    padding-top:9px;
+    font-size: 14.4px;
+    color: var(--gray-text);
+}
+
+.more{
+    position: relative;
+}
+
+.nav-more-items{
+    position: absolute;
+    height: fit-content;
+    width: clamp(200px, 22vw, 260px);
+    z-index: 4440;
+    background-color: rgb(218, 218, 218);
+    top: -200px;
+    padding: 13px;
+    display: none;
+    color: var(--black-text);
+    font-size: 15px;
+    flex-direction: column;
+   border-radius: 15px;
+   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.141);
+   
+    
+}
+
+.hide-nav-more{
+    display: flex;
+}
+
+
+.nav-scroll{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.495);
+}
+
+
+.more-items{
+    padding: 10px;
+}
+
+
+
+
+
+
+

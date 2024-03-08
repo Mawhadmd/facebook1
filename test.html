@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: rgb(206, 190, 190);
+        width: 300px;
+        height: 80px;
+      }
+
+      .back img {
+        width: 25px;
+      }
+
+      .a123 {
+        background-color: rgb(206, 190, 190);
+        width: 300px;
+        height: 80px;
+        margin: 10px;
+        display: inherit;
+      }
+        .nav1 {
+          position: sticky;
+          top:0;
+          right: 0;
+          left: 0;
+          width: 100vw;
+          background-color: red;
+          display: inline-block;
+         
+          
+        }
+        
+        body{
+          height: 300vw;
+          margin: 0;
+        }
+      
+    </style>
+  </head>
+  <body>
+    <div class="nav1">
+   <p>a</p>
+    </div>
+    <div class="container">
+      <div class="back"><img src="Back-icon.png" alt="" /></div>
+      <div class="front">text</div>
+    </div>
+    <div class="a123">مصو</div>
+  </body>
+  <script>
+    window.onresize  = abc;
+    window.onload = abc;
+    
+    function abc() {
+      if (window.innerWidth >= 700)
+        document.querySelector(".a123").style.display = "none";
+      else {
+        document.querySelector(".a123").style.display = "flex";
+      }
+    };
+  </script>
+</html>

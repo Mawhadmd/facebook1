@@ -1,0 +1,65 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+    --background-buttons: #b0b3b8;
+    --facebook-blue: #3b5998;
+    --facebook-lightblue: #8b9dc3;
+    --facebook-verylightblue: #dfe3ee;
+    --background-facebook: #f9fafd;
+    --gray-text: #65676b;
+    --black-text: #050505;
+    --search-bar: #f0f2f5;
+}
+
+
+body{
+    margin: 0;
+    background-color: 	#F0F2F5;
+    padding-top: 60px;
+    height:300vh;
+    overflow: hidden;
+}
+
+ header .icon, .pfp{
+    position: relative;
+}
+
+.altt{
+   
+    position: absolute;
+    background-color: #000000;
+    color: white;
+    font-size: 13px !important;
+    width: calc(fit-content + 11px) !important;
+    padding: 7px;
+    border-radius: 10px;
+    bottom: -40px;
+    pointer-events: none;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: 20;
+    transition: 300ms;
+    transition-delay: 250ms;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.457);
+}
+
+.nav-bar-items:hover, .pfp-bottom:hover, .Edit:hover, .nav-footer .more-items:hover ,.aside-buttons:hover{
+    background-color: rgba(106, 105, 105, 0.083);
+    cursor: pointer;
+}
+
+header .icon:hover .altt{
+    
+    opacity: 0.8;
+}
+
+
+
+
